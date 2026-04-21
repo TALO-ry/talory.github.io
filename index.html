@@ -1,10 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TALO ry</title>
+  <style>
+    :root {
+      --primary-purple: #6a0dad; /* Change this later */
+      --background-light: #e6e6e6;
+      --card-dark: #2f2f2f;
+      --text-light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--background-light);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--primary-purple);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 30px 20px;
+    }
+
+    .logo {
+      position: absolute;
+      left: 20px;
+      height: 75px;
+      width: 75px;
+      border-radius: 8px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .content-box {
+      background: var(--card-dark);
+      color: var(--text-light);
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 12px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--card-dark);
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 20px;
+      }
+
+      header {
+        justify-content: center;
+      }
+
+      .logo {
+        position: static;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+  <!-- HEADER -->
+  <header>
+    <img src="talory-logo.png" class="logo"alt="TALO ry logo" />
+    <div class="title">TALO ry</div>
+  </header>
 
-<p>My first paragraph.</p>
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="content-box">
+      <h2>Tervetuloa / Welcome </h2>
+      <br>
+      <p>
+        Suomi: blah blah tekstiä
+      </p>
+      <br />
+      <p>
+        English: blah blah text 
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-section">
+      <h3>Osoite / Address</h3>
+      <p>Myllypurontie 1<br>00920 Helsinki</p>
+    </div>
+    <div class="footer-section">
+      <h3>Yhteystiedot / Contact</h3>
+      <p>säpö1<br>säpö2<br>säpö3</p>
+    </div>
+  </footer>
 
 </body>
 </html>
