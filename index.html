@@ -90,6 +90,24 @@
       font-size: 18px;
     }
 
+      .social-icons {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+      }
+
+      .social-icon {
+          width: 32px;
+          height: 32px;
+          object-fit: contain;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+      }
+
+          .social-icon:hover {
+              transform: scale(1.1);
+          }
+
     @media (max-width: 600px) {
       .title {
         font-size: 20px;
@@ -120,11 +138,11 @@
       <h2>Tervetuloa / Welcome </h2>
       <br>
       <p>
-        Suomi: blah blah tekstiä
+        Nettisivut tulossa pian
       </p>
       <br />
       <p>
-        English: blah blah text 
+        The website is coming soon
       </p>
     </div>
   </main>
@@ -137,7 +155,18 @@
     </div>
     <div class="footer-section">
       <h3>Yhteystiedot / Contact</h3>
-      <p>säpö1<br>säpö2<br>säpö3</p>
+      <p>hallitus@talory.fi<br>admin@talory.fi<br>metropoliatalotekiikka@gmail.com<br>metropoliatalotekniikka@hotmail.com</p>
+    </div>
+    <div class="footer-section">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/talotekniikkametropolia/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png" alt="Instagram" class="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/talo-ry/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" alt="LinkedIn" class="social-icon" />
+            </a>
+        </div>
     </div>
   </footer>
 
